@@ -1,0 +1,27 @@
+&CONTROL
+  calculation = 'scf'
+  prefix      = 'aluminum'
+  outdir      = './tmp/'
+  pseudo_dir  = './'
+/
+&SYSTEM
+  ibrav         = 2
+  celldm(1)     = 7.90  ! change the number after decimal to get different values of lattice constant to plot graph
+  nat           = 1
+  ntyp          = 1
+  ecutwfc       = 40
+  ecutrho       = 320
+  occupations   = 'smearing'
+  smearing      = 'methfessel-paxton'
+  degauss       = 0.02
+/
+&ELECTRONS
+  mixing_beta   = 0.3  ! Use the stable value
+  conv_thr      = 1.0e-6
+/
+ATOMIC_SPECIES
+  Al   26.982   Al.pbe-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS {crystal}
+  Al    0.0    0.0    0.0
+K_POINTS {automatic}
+  8 8 8 0 0 0
