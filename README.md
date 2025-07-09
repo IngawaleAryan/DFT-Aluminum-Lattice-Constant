@@ -21,7 +21,7 @@ The equilibrium lattice constant corresponds to the atomic arrangement with the 
 
 The resulting Equation of State plot clearly shows the expected parabolic relationship between lattice constant and energy.
 
-![Equation of State for FCC Aluminum](Aluminum_EOS_Plot.png)
+![Equation of State for FCC Aluminum](Al_Lattice .png)
 
 From the generated data in `eos.dat`, the minimum energy was found to be **-39.50229837 Ry**, which corresponds to an equilibrium lattice constant of **4.0217 Å**.
 
